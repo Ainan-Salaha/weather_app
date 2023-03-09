@@ -1,0 +1,180 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+.weather_app {
+    background-image: url("https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 98vh;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.details {
+    color: #fff;
+    margin-top: 55px;
+    text-align: center;
+}
+.location {
+    padding: 10px 0;
+}
+
+.details-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+
+#text{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+    width: 10%;
+    margin-left: 200px;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+.weather_descp p {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 55px 0;
+}
+
+.fa-skyatlas {
+    font-size: 130px;
+}
+
+.time_day {
+    align-self: end;
+    margin-left: 40px;
+}
+
+.curr_weather {
+    align-self: end;
+    color: #fff;
+    font-size: 8.5rem;
+}
+
+.day {
+    margin-bottom: 35px;
+    font-size: 29px;
+    color: #fff;
+}
+
+.timing {
+    font-size: 55px;
+    color: #fff;
+}
+
+p {
+    margin: 0;
+}
+
+.searching {
+    align-self: center;
+    width: 60%;
+    margin-top: 20px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 85%;
+    height: 170%;
+    color: #fff;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.fa-magnifying-glass {
+    color: #fff;
+    color: #fff;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 350px) { 
+    .weather_app {
+        flex-direction: column;
+        justify-content: unset;
+        height: unset;
+        color: #000;
+    }
+
+    .time_day {
+        align-self: center;
+        font-weight: 600;
+        margin-left: 0;
+        color: #000;
+    }
+
+    .timing {
+        color: #000;
+    }
+
+    .day {
+        margin-bottom: 0;
+        font-size: 30px;
+        color: #000;
+    }
+
+    .curr_weather {
+        align-self: center;
+        color: #000;
+        font-size: 7.5rem;
+    }
+
+    .weather_search {
+        width: 100%;
+        color: #000;
+    }
+
+    .weather_descp {
+        align-self: center;
+        color: #000;
+    }
+
+    .fa-skyatlas {
+        font-size: 100px;
+        color: #000;
+    }
+
+    .weather_descp p {
+        font-size: 40px;
+        margin: 0;
+        color: #000;
+    }
+
+    .searching {
+        margin-top: 40px;
+        color: #000;
+    }
+
+    .details {
+        font-size: 20px;
+        margin-top: 35px;
+        color: #000;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    .location {
+        font-size: 22px;
+        color: #000;
+    }
+}
