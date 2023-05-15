@@ -64,6 +64,7 @@ const WeatherData = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function showPosition(position) {
@@ -124,7 +125,7 @@ const WeatherData = () => {
 
         <div className="weather_search">
             <div className="weather_descp">
-            <i class="fab fa-skyatlas"></i>
+            <i className="fab fa-skyatlas"></i>
             <p>{weather.condition}</p>
             </div>
         </div>
@@ -133,7 +134,7 @@ const WeatherData = () => {
 
         <div className="searching">
             <input type="text" id="text" placeholder="Search Any City" onChange={handleChange} />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass"></i>
         </div>
 
         <div className="details">
